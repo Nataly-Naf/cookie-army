@@ -18,7 +18,7 @@
 :root {
   --primary-font: Montserrat, sans-serif;
   --main-dark-font-color: rgba(17, 17, 17, 1);
-  --main-light-font-color: rgba(255, 255, 255, 1);
+  --main-light-font-color: #ffffff;
   --accent-color: rgba(253, 146, 34, 1);
   --main-dark-background-color: rgba(30, 24, 35, 1);
   --transition-main: 300ms cubic-bezier(0.4, 0, 0.2, 1);
