@@ -33,3 +33,40 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  /*--- Basic styles ---*/
+  min-width: 320px;
+  max-width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
+  /* Щоб бачити рамки контейнера на етапі розробки */
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+/*--- Tablet screen ---*/
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+/*--- Desktop screen ---*/
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
