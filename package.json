@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/cookie-army/",
+    "build": "vite build --base=/<cookie-army>/",
     "preview": "vite preview"
   },
   "devDependencies": {
