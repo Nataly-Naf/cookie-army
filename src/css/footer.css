@@ -10,6 +10,12 @@
   line-height: 1.17;
   font-weight: 500;
   margin-bottom: 32px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+.footer-contacts-list {
+  display: flex;
+  flex-direction: column;
 }
 .footer-marked-word {
   color: var(--accent-color);
@@ -21,9 +27,10 @@
   color: var(--main-light-font-color);
   font-style: normal;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 1.28;
   font-weight: 500;
   margin-bottom: 14px;
+  letter-spacing: 0em;
 }
 .footer-line {
   left: 0;
@@ -45,6 +52,12 @@
   font-size: 14px;
   line-height: 1.2;
   font-weight: 400;
+  letter-spacing: -0.02em;
+}
+.footer-contacts-item:hover,
+.footer-contacts-item:focus,
+.footer-contacts-item:active {
+  color: var(--accent-color);
 }
 .footer-contacts-item:not(:last-child) {
   margin-bottom: 4px;
@@ -53,11 +66,23 @@
   color: var(--main-light-font-color);
   font-style: normal;
 }
+
+.footer-navigation-link:hover,
+.footer-navigation-link:focus,
+.footer-navigation-link:active {
+  color: var(--accent-color);
+}
+
 .footer-navigation-item:not(:last-child) {
   margin-bottom: 18px;
 }
 .footer-social-media-icon {
   stroke: var(--main-light-font-color);
+}
+.footer-social-media-icon:hover,
+.footer-social-media-icon:focus,
+.footer-social-media-icon:active {
+  stroke: var(--accent-color);
 }
 .footer-social-media-list {
   display: flex;
@@ -69,6 +94,10 @@
 
 /* Tablet-styles */
 @media screen and (min-width: 768px) {
+  .footer-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
   .footer-wrapper {
     display: flex;
     gap: 124px;
@@ -105,10 +134,30 @@
     justify-content: flex-start;
     gap: 24px;
   }
+  .footer-navigation-item:not(:last-child) {
+    margin-bottom: 0;
+  }
   .footer-navigation-link {
     font-size: 14px;
     font-weight: 500;
     letter-spacing: -0.02em;
     text-align: left;
+  }
+  .footer-social-media-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-title {
+    margin-bottom: 62px;
+  }
+  .footer-wrapper {
+    gap: 543px;
+  }
+  .footer-line {
+    max-width: 1136px;
+    margin-bottom: 24px;
   }
 }
