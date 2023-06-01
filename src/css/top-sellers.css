@@ -1,7 +1,5 @@
-:root {}
-
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--primary-font);
   background-color: #E2E2E2;
 }
 
@@ -43,24 +41,6 @@ button {
   margin: 0 auto;
 }
 
-@media screen and (min-width:375px) {
-  .container {
-    width: 375px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .container {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width:1200px) {
-  .container {
-    width: 1200px;
-  }
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -75,17 +55,18 @@ button {
   overflow: hidden;
 }
 
-.top-sellers-container {}
+.top-sellers {
+  padding: 120px 0;
+}
 
 .top-sellers-title {
-  font-family: 'Montserrat';
   text-align: center;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  color: #111111;
+  color: var(--main-dark-font-color);
 }
 
 @media screen and (min-width:768px) {
@@ -96,7 +77,7 @@ button {
 }
 
 .top-sellers-span {
-  color: #FD9222;
+  color: var(--accent-color);
 }
 
 .top-sellers-img {
@@ -111,8 +92,6 @@ button {
     margin-bottom: 32px;
   }
 }
-
-.top-sellers-menu {}
 
 @media screen and (min-width:768px) {
   .top-sellers-menu {
@@ -134,16 +113,15 @@ button {
 
 .top-sellers-items img {
   border-radius: 15px;
-  background-color: dimgray;
+  background-color: var(--main-dark-background-color);
 }
 
 .top-sellers-mobile-text {
-  font-family: 'Montserrat';
   font-weight: 400;
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: -0.02em;
-  color: #111111;
+  color: var(--main-dark-font-color);
   margin-top: 20px;
   margin-bottom: 32px;
 }
@@ -167,12 +145,11 @@ button {
 }
 
 .top-sellers-text {
-  font-family: 'Montserrat';
   font-weight: 400;
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: -0.02em;
-  color: #111111;
+  color: var(--main-dark-font-color);
   width: 407px;
 }
 
@@ -183,25 +160,24 @@ button {
 }
 
 .top-sellers-btn {
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.28;
-  color: #FFFFFF;
-  background-color: #FD9222;
+  color: var(--main-light-font-color);
+  background-color: var(--accent-color);
   border-radius: 100px;
   width: 120px;
   height: 40px;
   text-align: center;
 
-  transition: 250ms linear;
+  transition: var(--transition-main);
 }
 
 .top-sellers-btn:hover,
 .top-sellers-btn:focus {
   background-color: #FCF1E0;
-  color: #FD9222;
+  color: var(--accent-color);
 }
 
 @media screen and (max-width:767px) {
@@ -216,5 +192,3 @@ button {
     height: 50px;
   }
 }
-
-.modal-button {}
