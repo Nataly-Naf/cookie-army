@@ -11,6 +11,10 @@
   background-color: rgba(30, 24, 35, 1);
 }
 .footer-title {
+  color: var(--main-light-font-color);
+  font-size: 24px;
+  line-height: 1.17;
+  font-weight: 500;
 }
 .footer-marked-word {
 }
