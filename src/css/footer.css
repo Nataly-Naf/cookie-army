@@ -53,6 +53,7 @@
   line-height: 1.2;
   font-weight: 400;
   letter-spacing: -0.02em;
+  transition: color var(--transition-main);
 }
 .footer-contacts-item:hover,
 .footer-contacts-item:focus,
@@ -65,6 +66,7 @@
 .footer-navigation-link {
   color: var(--main-light-font-color);
   font-style: normal;
+  transition: color var(--transition-main);
 }
 
 .footer-navigation-link:hover,
@@ -78,6 +80,7 @@
 }
 .footer-social-media-icon {
   stroke: var(--main-light-font-color);
+  transition: stroke var(--transition-main);
 }
 .footer-social-media-icon:hover,
 .footer-social-media-icon:focus,
