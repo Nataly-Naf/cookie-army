@@ -76,7 +76,10 @@
   .footer-title {
     font-size: 28px;
     line-height: 1.2;
-    max-width: 300px;
+    width: 300px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    margin-bottom: 54px;
   }
   .footer-contacts-list {
     display: flex;
@@ -92,5 +95,20 @@
   }
   .footer-wrapper {
     position: relative;
+  }
+  .footer-line {
+    max-width: 704px;
+    margin-bottom: 24px;
+  }
+  .footer-navigation-list {
+    display: flex;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+  .footer-navigation-link {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    text-align: left;
   }
 }
