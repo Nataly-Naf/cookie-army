@@ -1,0 +1,19 @@
+.container {
+  padding: 0 20px;
+}
+.page-header {
+  margin-bottom: 0;
+}
+.header-nav {
+  display: none;
+}
+.header-social-list {
+  display: none;
+}
+.header-logo {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.03em;
+  color: #111111;
+}
