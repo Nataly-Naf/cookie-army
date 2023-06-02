@@ -46,6 +46,11 @@
   background-color: #1e1823;
   height: 100%;
   width: 220px;
+  transform: translateX(100%);
+  transition: transform var(--transition-main);
+}
+.mobile-menu.is-open {
+  transform: translateX(0);
 }
 .mobile-menu-container {
   height: 100vh;
