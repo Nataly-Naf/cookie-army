@@ -1,0 +1,96 @@
+.hero-wrapper {
+    display: flex;
+    align-items: flex-end;
+    max-width: 335px;
+    height: 621px;
+    margin-bottom: 71px;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+        url('/img/hero/hero-chocolate_mob.jpg');
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero-wrapper {
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+            url('/img/hero/hero-chocolate_mob@2x.jpg');
+    }
+}
+
+@media only screen and (min-width: 378px) {
+    .hero-wrapper {
+        max-width: 704px;
+        height: 890px;
+        padding: 40px;
+        margin-bottom: 50px;
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+            url('/img/hero/hero-chocolate_tab.jpg');
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero-wrapper {
+            background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+                url('/img/hero/hero-chocolate_tab@2x.jpg');
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .hero-wrapper {
+        max-width: 1136px;
+        height: 600px;
+        margin-bottom: 72px;
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+            url('/img/hero/hero-chocolate_desk.jpg');
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero-wrapper {
+            background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+                url('/img/hero/hero-chocolate_desk@2x.jpg');
+        }
+    }
+}
+
+.hero-content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px 14px;
+}
+
+.hero-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-subtitle {
+        font-size: 28px;
+        line-height: 1.21;
+    }
+}
+
+.hero-buy {
+    min-width: 120px;
+    height: 41px;
+    padding: 12px 28px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    color: #fff;
+    background-color: var(--accent-color);
+    border-radius: 100px;
+}
