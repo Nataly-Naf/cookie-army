@@ -56,7 +56,19 @@ button {
 }
 
 .top-sellers {
-  padding: 120px 0;
+  padding: 72px 0;
+}
+
+@media screen and (min-width:768px) and (max-width:1199px) {
+  .top-sellers {
+    padding: 100px 0;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .top-sellers {
+    padding: 128px 0;
+  }
 }
 
 .top-sellers-title {

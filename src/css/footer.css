@@ -36,7 +36,7 @@
   left: 0;
   bottom: -40px;
   max-width: 335px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   margin-bottom: 32px;
 }
 
