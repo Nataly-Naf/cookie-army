@@ -61,6 +61,8 @@
     }
 }
 
+/*========== Content ==========*/
+
 .hero-content-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -82,15 +84,55 @@
     }
 }
 
-.hero-buy {
-    min-width: 120px;
+/*========== Button ==========*/
+
+.hero-btn {
     height: 41px;
     padding: 12px 28px;
-
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
     color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-btn {
+        height: 45px;
+        padding: 14px 40px;
+    }
+}
+
+.hero-buy-btn {
+    min-width: 120px;
     background-color: var(--accent-color);
     border-radius: 100px;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-buy-btn {
+        min-width: 144px;
+    }
+}
+
+.hero-how-btn {
+    min-width: 159px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 100px;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-now-btn {
+        min-width: 183px;
+    }
+}
+
+/*========== Scroll ==========*/
+
+.hero-scroll-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.03em;
+    color: #fff;
 }
