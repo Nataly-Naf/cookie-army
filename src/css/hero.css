@@ -1,0 +1,170 @@
+.hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    row-gap: 32px;
+    max-width: 335px;
+    height: 621px;
+    margin-bottom: 71px;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+        url('/img/hero/hero-chocolate_mob.jpg');
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero-wrapper {
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+            url('/img/hero/hero-chocolate_mob@2x.jpg');
+    }
+}
+
+@media only screen and (min-width: 378px) {
+    .hero-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-end;
+        max-width: 704px;
+        height: 890px;
+        padding: 40px;
+        margin-bottom: 50px;
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+            url('/img/hero/hero-chocolate_tab.jpg');
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero-wrapper {
+            background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+                url('/img/hero/hero-chocolate_tab@2x.jpg');
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .hero-wrapper {
+        max-width: 1136px;
+        height: 600px;
+        margin-bottom: 72px;
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+            url('/img/hero/hero-chocolate_desk.jpg');
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero-wrapper {
+            background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+                url('/img/hero/hero-chocolate_desk@2x.jpg');
+        }
+    }
+}
+
+/*========== Content ==========*/
+
+.hero-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-subtitle {
+        max-width: 484px;
+        font-size: 28px;
+        line-height: 1.21;
+    }
+}
+
+/*========== Button ==========*/
+
+.hero-list-btn {
+    display: flex;
+    gap: 14px;
+}
+
+.hero-btn {
+    height: 41px;
+    padding: 12px 28px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-btn {
+        height: 45px;
+        padding: 14px 40px;
+    }
+}
+
+.hero-buy-btn {
+    min-width: 120px;
+    background-color: var(--accent-color);
+    border-radius: 100px;
+    border: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-buy-btn {
+        min-width: 144px;
+    }
+}
+
+.hero-how-btn {
+    min-width: 159px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 100px;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-now-btn {
+        min-width: 183px;
+    }
+}
+
+/*========== Scroll ==========*/
+
+.hero-scroll-thumb {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-scroll-thumb {
+        margin-left: auto;
+    }
+}
+
+.hero-scroll-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+.hero-scroll-btn {
+    width: 28px;
+    height: 28px;
+    padding: 6px;
+    border: none;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.hero-scroll-icon {
+    fill: var(--accent-color);
+}
