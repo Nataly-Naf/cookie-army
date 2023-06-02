@@ -1,6 +1,8 @@
 .hero-wrapper {
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
+    row-gap: 32px;
     max-width: 335px;
     height: 621px;
     margin-bottom: 71px;
@@ -63,11 +65,7 @@
 
 /*========== Content ==========*/
 
-.hero-content-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px 14px;
-}
+
 
 .hero-subtitle {
     font-weight: 500;
@@ -85,6 +83,11 @@
 }
 
 /*========== Button ==========*/
+.hero-list-btn {
+    display: flex;
+    gap: 14px;
+
+}
 
 .hero-btn {
     height: 41px;
@@ -106,6 +109,7 @@
     min-width: 120px;
     background-color: var(--accent-color);
     border-radius: 100px;
+    border: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -129,10 +133,30 @@
 
 /*========== Scroll ==========*/
 
+.hero-scroll-thumb {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+
 .hero-scroll-text {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: -0.03em;
     color: #fff;
+}
+
+.hero-scroll-btn {
+    width: 28px;
+    height: 28px;
+    padding: 6px;
+    border: none;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.hero-scroll-icon {
+    fill: var(--accent-color);
 }
