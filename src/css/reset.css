@@ -10,7 +10,7 @@ p {
 }
 
 body {
-  background-color: rgba(250, 250, 250, 1);
+  background-color: #e2e2e2;
   font-family: var(--primary-font);
 }
 ul {

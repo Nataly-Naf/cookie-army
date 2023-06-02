@@ -1,71 +1,14 @@
-body {
-  font-family: var(--primary-font);
-  background-color: #E2E2E2;
-}
-
-h1,
-h2,
-h3,
-h4,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-ul,
-ol {
-  list-style: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-button {
-  cursor: pointer;
-  border: none;
-  border-radius: 4px;
-}
-
-.container {
-  padding: 0 32px;
-  margin: 0 auto;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .top-sellers {
   padding: 72px 0;
 }
 
-@media screen and (min-width:768px) and (max-width:1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .top-sellers {
     padding: 100px 0;
   }
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
   .top-sellers {
     padding: 128px 0;
   }
@@ -81,7 +24,7 @@ button {
   color: var(--main-dark-font-color);
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .top-sellers-title {
     font-size: 24px;
     line-height: 1.16;
@@ -95,17 +38,17 @@ button {
 .top-sellers-img {
   margin-top: 32px;
   margin-bottom: 20px;
-  background-color: #E2E2E2;
+  background-color: #e2e2e2;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .top-sellers-img {
     margin-top: 50px;
     margin-bottom: 32px;
   }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .top-sellers-menu {
     display: flex;
     justify-content: center;
@@ -117,7 +60,7 @@ button {
   display: none;
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
   .top-sellers-items:last-child {
     display: unset;
   }
@@ -138,7 +81,7 @@ button {
   margin-bottom: 32px;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .top-sellers-mobile-text {
     display: none;
   }
@@ -148,7 +91,7 @@ button {
   text-align: center;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .top-sellers-bottom {
     text-align: start;
     display: flex;
@@ -165,7 +108,7 @@ button {
   width: 407px;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   .top-sellers-text {
     display: none;
   }
@@ -188,15 +131,16 @@ button {
 
 .top-sellers-btn:hover,
 .top-sellers-btn:focus {
-  background-color: #FCF1E0;
+  background-color: #fcf1e0;
   color: var(--accent-color);
 }
 
-@media screen and (max-width:767px) {
-  .top-sellers-btn {}
+@media screen and (max-width: 767px) {
+  .top-sellers-btn {
+  }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .top-sellers-btn {
     font-size: 18px;
     line-height: 1.22;
