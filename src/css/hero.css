@@ -26,6 +26,10 @@
 
 @media only screen and (min-width: 378px) {
     .hero-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-end;
         max-width: 704px;
         height: 890px;
         padding: 40px;
@@ -65,8 +69,6 @@
 
 /*========== Content ==========*/
 
-
-
 .hero-subtitle {
     font-weight: 500;
     font-size: 20px;
@@ -77,16 +79,17 @@
 
 @media only screen and (min-width: 768px) {
     .hero-subtitle {
+        max-width: 484px;
         font-size: 28px;
         line-height: 1.21;
     }
 }
 
 /*========== Button ==========*/
+
 .hero-list-btn {
     display: flex;
     gap: 14px;
-
 }
 
 .hero-btn {
@@ -139,6 +142,11 @@
     gap: 14px;
 }
 
+@media only screen and (min-width: 768px) {
+    .hero-scroll-thumb {
+        margin-left: auto;
+    }
+}
 
 .hero-scroll-text {
     font-weight: 500;
