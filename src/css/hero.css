@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    row-gap: 32px;
     max-width: 335px;
     height: 621px;
     margin-bottom: 71px;
@@ -26,10 +25,6 @@
 
 @media only screen and (min-width: 378px) {
     .hero-wrapper {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: flex-end;
         max-width: 704px;
         height: 890px;
         padding: 40px;
@@ -70,6 +65,7 @@
 /*========== Content ==========*/
 
 .hero-subtitle {
+    margin-bottom: 32px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -86,6 +82,18 @@
 }
 
 /*========== Button ==========*/
+
+.hero-btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-btn-wrapper {
+        flex-direction: row;
+    }
+}
 
 .hero-list-btn {
     display: flex;
