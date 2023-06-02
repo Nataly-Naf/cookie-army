@@ -37,6 +37,8 @@
 .mobile-menu-open-icon {
   stroke: #111111;
 }
+@media only screen and (max-width: 767px) {
+}
 @media only screen and (min-width: 768px) {
   .header-logo {
     padding-top: 24px;
@@ -87,6 +89,11 @@
     color: #111111;
     padding-top: 24px;
     padding-bottom: 32px;
+    transition: color var(--transition-main);
+  }
+  .header-nav-link:hover,
+  .header-nav-link:focus {
+    color: var(--accent-color);
   }
   .header-social-list {
     display: flex;
@@ -107,5 +114,10 @@
   .header-social-icon {
     stroke: #111111;
     fill: currentColor;
+    transition: stroke var(--transition-main);
+  }
+  .header-social-icon:hover,
+  .header-social-icon:focus {
+    stroke: var(--accent-color);
   }
 }
