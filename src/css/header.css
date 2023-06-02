@@ -1,8 +1,10 @@
-.container {
-  padding: 0 20px;
-}
 .page-header {
   margin-bottom: 0;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .header-nav {
   display: none;
@@ -16,4 +18,94 @@
   line-height: 1.29;
   letter-spacing: -0.03em;
   color: #111111;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding-top: 20px;
+  padding-bottom: 14px;
+}
+.header-logo-simply {
+  font-style: italic;
+}
+.mobile-menu-open-btn {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  height: 28px;
+}
+.mobile-menu-open-icon {
+  stroke: #111111;
+}
+@media only screen and (min-width: 768px) {
+  .header-logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .mobile-menu-open-btn {
+    height: 32px;
+  }
+  .mobile-menu-open-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .header-container {
+    justify-content: flex-start;
+  }
+  .mobile-menu-open-btn {
+    display: none;
+  }
+  .header-nav {
+    display: block;
+  }
+  .header-social-list {
+    display: flex;
+  }
+  .header-logo {
+    font-size: 18px;
+    line-height: 1.11;
+    padding-bottom: 32px;
+    margin-right: 188px;
+  }
+  .header-logo-icon {
+    width: 24px;
+    height: 24px;
+  }
+  .header-nav-list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  .header-nav-link {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: #111111;
+    padding-top: 24px;
+    padding-bottom: 32px;
+  }
+  .header-social-list {
+    display: flex;
+    gap: 18px;
+
+    margin-left: auto;
+  }
+  .header-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: transparent;
+    width: 24px;
+    height: 24px;
+    padding-top: 24px;
+    padding-bottom: 32px;
+  }
+  .header-social-icon {
+    stroke: #111111;
+    fill: currentColor;
+  }
 }
