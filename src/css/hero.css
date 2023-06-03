@@ -1,3 +1,5 @@
+/*========== Main hero styles ==========*/
+
 .hero-wrapper {
     display: flex;
     flex-direction: column;
@@ -124,6 +126,8 @@
     background-color: var(--accent-color);
     border-radius: 100px;
     border: none;
+    transition: color var(--transition-main),
+        background-color var(--transition-main);
 }
 
 .hero-buy-btn:hover,
@@ -143,6 +147,8 @@
     background-color: transparent;
     border: 1px solid var(--main-light-font-color);
     border-radius: 100px;
+    transition: color var(--transition-main),
+        border var(--transition-main);
 }
 
 .hero-how-btn:hover,
@@ -169,6 +175,7 @@
     line-height: 1.29;
     letter-spacing: -0.03em;
     color: var(--main-light-font-color);
+    transition: color var(--transition-main);
 }
 
 .hero-scroll-link:hover,
@@ -189,6 +196,7 @@
     border: none;
     background-color: var(--main-light-font-color);
     border-radius: 50%;
+    transition: background-color var(--transition-main);
 }
 
 .hero-scroll-btn:hover,
@@ -206,6 +214,7 @@
 
 .hero-scroll-icon {
     fill: var(--accent-color);
+    transition: fill var(--transition-main);
 }
 
 .hero-scroll-icon:hover,
