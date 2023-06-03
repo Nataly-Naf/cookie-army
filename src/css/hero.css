@@ -178,10 +178,6 @@
     transition: color var(--transition-main);
 }
 
-.hero-scroll-link:hover,
-.hero-scroll-link:focus {
-    color: var(--accent-color);
-}
 
 @media only screen and (min-width: 768px) {
     .hero-scroll-link {
@@ -199,11 +195,6 @@
     transition: background-color var(--transition-main);
 }
 
-.hero-scroll-btn:hover,
-.hero-scroll-btn:focus {
-    background-color: var(--accent-color);
-}
-
 @media only screen and (min-width: 768px) {
     .hero-scroll-btn {
         width: 38px;
@@ -212,19 +203,29 @@
     }
 }
 
-.hero-scroll-icon {
-    fill: var(--accent-color);
-    transition: fill var(--transition-main);
-}
-
-.hero-scroll-icon:hover,
-.hero-scroll-icon:focus {
-    fill: var(--main-light-font-color);
-}
-
 @media only screen and (min-width: 768px) {
     .hero-scroll-icon {
         width: 22px;
         height: 22px;
     }
+}
+
+.hero-scroll-icon {
+    fill: var(--accent-color);
+    transition: fill var(--transition-main);
+}
+
+.hero-scroll-link:hover,
+.hero-scroll-link:focus {
+    color: var(--accent-color);
+}
+
+.hero-scroll-link:hover .hero-scroll-btn,
+.hero-scroll-link:focus .hero-scroll-btn {
+    background-color: var(--accent-color);
+}
+
+.hero-scroll-link:hover .hero-scroll-icon,
+.hero-scroll-link:focus .hero-scroll-icon {
+    fill: var(--main-light-font-color);
 }
