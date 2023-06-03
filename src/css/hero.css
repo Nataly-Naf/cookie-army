@@ -64,7 +64,7 @@
     }
 }
 
-/*========== Content ==========*/
+/*========== Subtitle ==========*/
 
 .hero-subtitle {
     margin-bottom: 32px;
@@ -83,7 +83,7 @@
     }
 }
 
-/*========== Button ==========*/
+/*========== Buttons ==========*/
 
 .hero-btn-wrapper {
     display: flex;
@@ -99,6 +99,7 @@
 
 .hero-list-btn {
     display: flex;
+    flex-wrap: wrap;
     gap: 14px;
 }
 
