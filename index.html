@@ -497,16 +497,77 @@
 </section>
 
     
+    <div class="review-modal-backdrop review-modal-is-hidden" data-modalreview>
+    <div class="review-modal">
+      <button type="button" class="review-modal-close-btn" data-modalreview-close>
+        <svg width="24" height="24" class="review-modal-close-svg">
+          <use href="./img/icons.svg#icon-x-close"></use>
+        </svg>
+      </button>
+      <p class="review-modal-text">
+        leave a review <br />
+        about <span class="review-modal-span">our chocolate</span>
+      </p>
+      <form action="#">
+        <div class="review-modal-wrap-cnt">
+          <label>
+            <input
+              type="text"
+              name="user-name"
+              class="review-modal-input"
+              required
+              maxlength="20"
+              minlength="3"
+              placeholder="Name"
+            />
+          </label>
+        </div>
+        <div class="review-modal-wrap-cnt">
+          <label>
+            <input
+              type="email"
+              name="user-email"
+              class="review-modal-input"
+              required
+              placeholder="Enter your email"
+            />
+          </label>
+        </div>
+        <div class="review-modal-wrap-cnt">
+          <label class="review-modal-tel-label">
+            <input
+              type="tel"
+              name="user-tel"
+              class="review-modal-tel-input"
+              required
+              placeholder="Phone number"
+              title="501111111"
+            />
+            <svg width="24" height="18" class="ukr-flag-icon">
+              <use href="./img/icons.svg#icon-ukr-flag"></use>
+            </svg>
+          </label>
+        </div>
+        <div class="review-modal-text-area">
+          <label for="review-modal-text-area"></label>
+          <textarea
+            name="review-modal-text-area"
+            id="review-modal-text-area"
+            placeholder="Enter text"
+            class="review-modal-textarea"
+          ></textarea>
+        </div>
+        <button type="submit" class="review-modal-button">Send</button>
+      </form>
+    </div>
+  </div>
 
-    <!-- <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-Path to images as from index.html file -->
-    <!-- <img src="./img/javascript.svg" alt="" />
-    </section> -->
-
-    <!-- Loads the specified .html file -->
-    <!-- ENOENT: no such file or directory, open '/home/runner/work/cookie-army/cookie-army/src/partials/vite-promo.html'  -->
-
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     
   </body>
 </html>
