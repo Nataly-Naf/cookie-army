@@ -35,18 +35,6 @@
   color: var(--accent-color);
 }
 
-.our-products-list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-@media only screen and (min-width: 768px) {
-  .our-products-list {
-    gap: 18px;
-  }
-}
-
 .our-products-item {
   padding: 32px 52px;
 
@@ -98,13 +86,20 @@
   border-radius: 100px;
 }
 
-.swiper {
-  width: 1000px;
-  height: 1000px;
+.swiper-pagination-bullet {
+  background: rgba(17, 17, 17, 0.1);
+  width: 13px;
+  height: 13px;
+}
+
+.swiper-pagination-bullet-active {
+  width: 28px;
+  height: 13px;
+  background: #fd9222;
+  border-radius: 100px;
 }
 
 .swiper-pagination {
-  color: rgba(17, 17, 17, 0.1);
-  width: 10px;
-  height: 10px;
+  position: static;
+  margin-top: 20px;
 }
