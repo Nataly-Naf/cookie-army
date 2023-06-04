@@ -2,6 +2,18 @@
   padding-top: 72px;
 }
 
+@media only screen and (min-width: 768px) {
+  .our-products {
+    padding-top: 100px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .our-products {
+    padding-top: 128px;
+  }
+}
+
 .our-products-title {
   margin-bottom: 32px;
 
@@ -11,6 +23,12 @@
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .our-products-title {
+    margin-bottom: 50px;
+  }
 }
 
 .our-products-title-span {
