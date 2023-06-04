@@ -97,3 +97,14 @@
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
 }
+
+.swiper {
+  width: 1000px;
+  height: 1000px;
+}
+
+.swiper-pagination {
+  color: rgba(17, 17, 17, 0.1);
+  width: 10px;
+  height: 10px;
+}
