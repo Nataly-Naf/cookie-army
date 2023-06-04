@@ -103,3 +103,9 @@
   position: static;
   margin-top: 20px;
 }
+
+@media only screen and (min-width: 768px) {
+  .swiper-pagination {
+    margin-top: 32px;
+  }
+}
