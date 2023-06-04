@@ -17,4 +17,11 @@ const swiper = new Swiper('.swiper', {
       },
     },
     spaceBetween: 18,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    pauseOnHover: true,
+    pauseOnFocus: true,
+    pauseOnDotsHover: true,
+    waitForAnimate: false,
+    variableWidth: true,
   });
