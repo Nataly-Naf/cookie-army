@@ -38,7 +38,6 @@
 .top-sellers-img {
   margin-top: 32px;
   margin-bottom: 20px;
-  background-color: #e2e2e2;
 }
 
 @media screen and (min-width: 768px) {
@@ -125,6 +124,7 @@
   width: 120px;
   height: 40px;
   text-align: center;
+  border: none;
 
   transition: var(--transition-main);
 }
@@ -133,11 +133,6 @@
 .top-sellers-btn:focus {
   background-color: #fcf1e0;
   color: var(--accent-color);
-}
-
-@media screen and (max-width: 767px) {
-  .top-sellers-btn {
-  }
 }
 
 @media screen and (min-width: 768px) {
