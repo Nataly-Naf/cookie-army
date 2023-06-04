@@ -15,6 +15,7 @@
 @import url('./reviews.css');
 @import url('./footer.css');
 @import url('./modal-buy-now.css');
+@import url('./leave-review-modal.css');
 
 :root {
   --primary-font: Montserrat, sans-serif;
