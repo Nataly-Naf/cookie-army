@@ -11,32 +11,28 @@
 
 /* Section */
 
-.made-section {
+/* .made-section {
     margin: 128px 0;
-}
+} */
 
-.made-container {
-    display: flex;
-    /* width: 100%; */
-    gap: 20px;
-}
 
 
 /* Video */
 
-.made-video {
+/* .made-video {
     width: 600px;
     height: 400px;
     margin-right: 0;
+} */
+
+.iframe {
+    /* width: 600px;
+    height: 400px; */
+    border-radius: 15px;
 }
 
 
 /* Desription */
-.iframe {
-    width: 600px;
-    height: 400px;
-    border-radius: 15px;
-}
 
 .description-title {
     font-weight: 600;
@@ -54,18 +50,15 @@
     margin-left: 48px;
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    padding-right: 32px;
+    /* gap: 24px; */
+    /* padding-right: 32px; */
 }
 
 .made-description {
     display: flex;
     flex-direction: column;
-    /* gap: 28px; */
     background-color: var(--main-light-font-color);
-    width: 516px;
-    /* height: 400px; */
-    /* margin-right: auto; */
+    /* width: 516px; */
     border-radius: 15px;
     
 }
@@ -82,4 +75,79 @@
 
 ul {
     list-style: disc;
+}
+
+
+/* Styles for mobile */
+@media only screen and (min-width: 320px) and (max-width: 767.8px) {
+   {
+    
+  }
+}
+
+
+
+/* Styles for tablet */
+@media only screen and (min-width: 768px) and (max-width: 1199.8px) {
+  .iframe {
+    width: 614px;
+    height: 400px;
+  }
+
+  .made-video {
+    justify-content: center;
+    width: 614px;
+    height: 400px;
+  }
+
+  .made-container {
+    flex-direction: column;
+    display: flex;
+    padding-left: 77px;
+    padding-right: 77px;
+    gap: 20px;
+    
+  }
+
+  .made-section {
+    margin: 100px 0;
+}
+
+  .made-description {
+    justify-content: center;
+  }
+
+  .description-list {
+    text-align: left;
+    gap: 18px;
+    padding-right: 102px;
+    padding-bottom: 32px;
+  }
+}
+
+
+/* Style for desktop */
+@media only screen and (min-width: 1200px) {
+  .iframe {
+    width: 600px;
+    height: 400px;
+  }
+
+  .made-container {
+    display: flex;
+    /* width: 100%; */
+    gap: 20px;
+}
+.made-section {
+    margin: 128px 0;
+}
+
+.made-description {
+    width: 516px;
+}
+
+.description-list {
+    gap: 24px;
+    padding-right: 32px;
+}
 }
