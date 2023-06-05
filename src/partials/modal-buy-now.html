@@ -46,15 +46,15 @@
           class="modal-buy-form-input"
           placeholder="Name"
           required
-        />
-        <label for="" class="modal-buy-form-label">
+      /></label>
+      <label for="" class="modal-buy-form-label">
         <input
           type="text"
           name="user_surname"
           class="modal-buy-form-input"
           placeholder="Surname"
           required
-        /></label>
+      /></label>
       <label for="" class="modal-buy-form-label">
         <span class="modal-buy-form-input-desc">Email</span>
         <input
@@ -67,32 +67,45 @@
       </label>
       <label for="" class="modal-buy-form-label">
         <span class="modal-buy-form-input-desc">Phone number</span>
-        <input
-          type="tel"
-          name="user_phone"
-          class="modal-buy-form-input"
-          placeholder="Phone number"
-          required
-        />
+        <span class="modal-buy-input-wrapper">
+          <input
+            type="tel"
+            name="user_phone"
+            class="modal-buy-form-input"
+            placeholder="Phone number"
+            required /><svg
+            class="modal-buy-ukraine-icon"
+            width="22"
+            height="13"
+          >
+            <use href="/img/spryte.svg#"></use></svg
+        ></span>
       </label>
       <label for="" class="modal-buy-form-label">
         <span class="modal-buy-form-input-desc">Card number</span>
-        <input
-          type="text"
-          name="user_card"
-          class="modal-buy-form-input"
-          placeholder="Card number"
-          required
-        />
+        <span class="modal-buy-input-wrapper">
+          <input
+            type="text"
+            name="user_card"
+            class="modal-buy-form-input"
+            placeholder="Card number"
+            required /><svg
+            class="modal-buy-mastercard-icon"
+            width="22"
+            height="13"
+          >
+            <use href="/img/spryte.svg#mastercard"></use></svg
+        ></span>
       </label>
-       <label class="modal-buy-form-label">
-            <span class="modal-buy-form-input-desc">Comment</span>
-            <textarea
-              name="user_message"
-              class="modal-buy-form-message"
-              placeholder="Enter text"
-            ></textarea>
-            <button type="submit" class="modal-buy-form-btn">submit</button>
+      <label class="modal-buy-form-label">
+        <span class="modal-buy-form-input-desc">Comment</span>
+        <textarea
+          name="user_message"
+          class="modal-buy-form-message"
+          placeholder="Enter text"
+        ></textarea>
+      </label>
+      <button type="submit" class="modal-buy-form-btn">Submit</button>
     </form>
   </div>
 </div>
