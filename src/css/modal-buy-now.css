@@ -33,7 +33,7 @@
 @media only screen and (min-width: 768px) {
     .modal-buy {
         width: 609px;
-        min-height: 600px;
+        min-height: 1058px;
         padding: 48px;
     }
 }
@@ -65,10 +65,12 @@
 
 .modal-buy-close-icon {
     stroke: #111111;
+    transition: stroke var(--transition-main);
 }
 
 .modal-buy-close-btn:hover .modal-buy-close-icon,
 .modal-buy-close-btn:focus .modal-buy-close-icon {
+    stroke: var(--accent-color);
     background-color: #FCF1E0;
 }
 
@@ -94,6 +96,8 @@
         line-height: 1.17;
     }
 }
+
+/* Modal cards */
 
 .modal-buy-product-list {
     display: flex;
@@ -143,7 +147,7 @@
     font-size: 14px;
     line-height: 1.21;
     color: #111111;
-    background: #FAFAFA;
+    background-color: #FAFAFA;
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 100px;
 }
@@ -174,6 +178,13 @@
     color: #000000;
 }
 
+@media only screen and (min-width: 768px) {
+    .modal-buy-form-input-desc {
+        font-size: 14px;
+        line-height: 1.29;
+    }
+}
+
 .modal-buy-form-input {
     width: 100%;
     height: 45px;
@@ -183,14 +194,41 @@
     border-radius: 8px;
 }
 
-.modal-buy-form-input::placeholder {
+@media only screen and (min-width: 768px) {
+    .modal-buy-form-input {
+        height: 66px;
+        padding: 22px 24px;
+    }
+}
+
+.modal-buy-form-input::placeholder,
+.modal-buy-form-message::placeholder {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.21;
-    display: flex;
-    align-items: center;
     letter-spacing: -0.02em;
     color: rgba(64, 64, 64, 0.3);
+}
+
+@media only screen and (min-width: 768px) {
+    .modal-buy-name-thumb {
+        display: flex;
+        align-items: center;
+        gap: 21px;
+    }
+
+    .modal-buy-form-input::placeholder,
+    .modal-buy-form-message::placeholder {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.22;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .modal-name-field {
+        width: 266px;
+    }
 }
 
 .modal-buy-input-wrapper {
@@ -198,11 +236,92 @@
     display: block;
 }
 
+.buy-tel-thumb::before {
+    content: '+380';
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+
+@media only screen and (min-width: 768px) {
+    .buy-tel-thumb::before {
+        left: 74px;
+        font-size: 18px;
+        line-height: 1.22;
+    }
+}
+
+.buy-tel {
+    padding-left: 106px;
+}
+
+@media only screen and (min-width: 768px) {
+    .buy-tel {
+        padding-left: 177px;
+    }
+}
+
+.buy-tel-thumb::after {
+    content: '';
+    position: absolute;
+    left: 92px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.5px;
+    height: 25px;
+    background-color: rgba(64, 64, 64, 0.3);
+}
+
+@media only screen and (min-width: 768px) {
+    .buy-tel-thumb::after {
+        height: 17px;
+        left: 149px
+    }
+}
+
+.modal-buy-ukraine-icon {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media only screen and (min-width: 768px) {
+    .modal-buy-ukraine-icon {
+        left: 24px;
+        width: 32px;
+        height: 24px;
+    }
+}
+
 .modal-buy-mastercard-icon {
     position: absolute;
     left: 220px;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.buy-card {
+    padding-right: 35px;
+}
+
+@media only screen and (min-width: 768px) {
+    .modal-buy-mastercard-icon {
+        left: 450px;
+        width: 30px;
+        height: 18px;
+    }
+
+    .buy-card {
+        padding-right: 63px;
+    }
 }
 
 .modal-buy-form-message {
@@ -215,12 +334,11 @@
     border-radius: 8px;
 }
 
-.modal-buy-form-message::placeholder {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.21;
-    letter-spacing: -0.02em;
-    color: rgba(64, 64, 64, 0.3);
+@media only screen and (min-width: 768px) {
+    .modal-buy-form-message {
+        padding: 22px 24px;
+        height: 137px;
+    }
 }
 
 .modal-buy-form-btn {
@@ -236,4 +354,11 @@
     font-size: 14px;
     line-height: 1.21;
     color: var(--main-light-font-color);
+}
+
+@media only screen and (min-width: 768px) {
+    .modal-buy-form-btn {
+        width: 133px;
+        height: 45px;
+    }
 }
