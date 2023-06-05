@@ -26,7 +26,7 @@
     />
     
     <script type="module" crossorigin src="/cookie-army/assets/index-22d1f84e.js"></script>
-    <link rel="stylesheet" href="/cookie-army/assets/index-dbd64deb.css">
+    <link rel="stylesheet" href="/cookie-army/assets/index-745f7fd0.css">
   </head>
 
   <body>
@@ -746,17 +746,17 @@
 </section>
 
       <section class="subscribe-section">
-    <div class="subscribe-container container">
-      <h2 class="subscribe-title">Explore our new chocolate first</h2>
-      <p class="subscribe-text">
-        From the velvety texture to the rich and complex flavor, our New
-        Chocolate is a true indulgence that will leave you craving more.
-        Made with only the finest ingredients and handcrafted with the
-        utmost care, each piece is a work of art that is sure to please.
-      </p>
-      <button class="subscribe-btn">Subscribe</button>
-    </div>
-  </section>
+  <div class="subscribe-container container">
+    <h2 class="subscribe-title">Explore our new chocolate first</h2>
+    <p class="subscribe-text">
+      From the velvety texture to the rich and complex flavor, our New
+      Chocolate is a true indulgence that will leave you craving more.
+      Made with only the finest ingredients and handcrafted with the
+      utmost care, each piece is a work of art that is sure to please.
+    </p>
+    <button class="subscribe-btn">Subscribe</button>
+  </div>
+</section>
     </main>
     <footer id="footer" class="footer-section">
   <div class="container">
@@ -1011,7 +1011,40 @@
   </div>
 </div>
 
-    
+    <div class="explore-backdrop is-hidden" data-modal>
+    <div class="explore-modal">
+        <button class="explore-close-btn" type="button" data-modal-close>
+            <svg class="explore-close-icon" width="20" height="20">
+                <use href="/cookie-army/assets/spryte-aab6fcc2.svg#icon-close-icon"></use>
+            </svg>
+        </button>
+        <div class="explore-img-wrapper">
+            <picture>
+                <source media="(min-width: 768px)"
+                    srcset="./img/subscribe-modal/mod-explore-img_tab_desk@1x.jpg 1x, ./img/subscribe-modal/mod-explore-img_tab_desk@2x 2x"
+                    type="image/jpg">
+                <source media="(max-width: 767px)"
+                    srcset="/cookie-army/assets/mod-explore-img_mob@1x-695bf0e6.jpg 1x, /cookie-army/assets/mod-explore-img_mob@2x-6f75a516.jpg 2x"
+                    type="image/jpg">
+                <img class="explore-img" src="/cookie-army/assets/mod-explore-img_tab_desk@1x-35a92bc7.jpg"
+                    alt="Dark chocolate" width="538px" height="196px" loading="lazy">
+            </picture>
+        </div>
+        <div class="explore-text-wrapper">
+            <h2 class="explore-title">Explore our
+                <span class="span-new-choc-first"><span class="span-new-choc">new chocolate</span> first!</span>
+            </h2>
+            <form class="explore-form">
+                <span class="explore-inp-btn-wrapper">
+                    <label class="explore-label">
+                        <input class="explore-input" type="email" name="subscribe_email" placeholder="Enter your email">
+                    </label>
+                    <button class="explore-submit-btn" type="submit">Submit</button>
+                </span>
+            </form>
+        </div>
+    </div>
+</div>
 
     <script
       defer
