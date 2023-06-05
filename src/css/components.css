@@ -140,7 +140,7 @@
 .box-style:nth-child(3) {
   background-color: var(--main-dark-font-color);
 }
-@media screen and (min-width: 768px) and (max-width: 2000px) {
+@media screen and (min-width: 768px) {
   .box-style {
     flex-basis: calc((100% - 32px) / 2);
   }
@@ -160,6 +160,18 @@
 @media screen and (min-width: 1200px) {
   .box-style {
     max-width: 270px;
+  }
+  .item-1 {
+    order: 1;
+  }
+  .item-2 {
+    order: 2;
+  }
+  .item-3 {
+    order: 3;
+  }
+  .item-4 {
+    order: 4;
   }
 }
 
