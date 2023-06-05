@@ -1,12 +1,27 @@
 /*========== Main hero styles ==========*/
 
+.hero-section {
+    padding-bottom: 71px;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-section {
+        padding-bottom: 50px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .hero-section {
+        padding-bottom: 72px;
+    }
+}
+
 .hero-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     max-width: 335px;
     height: 621px;
-    margin-bottom: 71px;
     padding: 20px;
     background-repeat: no-repeat;
     background-position: center;
@@ -32,7 +47,6 @@
         max-width: 704px;
         height: 890px;
         padding: 40px;
-        margin-bottom: 50px;
         background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
             url('/img/hero/hero-chocolate_tab.jpg');
     }
@@ -51,7 +65,6 @@
     .hero-wrapper {
         max-width: 1136px;
         height: 600px;
-        margin-bottom: 72px;
         background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
             url('/img/hero/hero-chocolate_desk.jpg');
     }
