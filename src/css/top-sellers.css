@@ -12,6 +12,7 @@
 @media screen and (min-width: 1200px) {
   .top-sellers {
     padding-top: 128px;
+    padding-bottom: 128px;
   }
 }
 
