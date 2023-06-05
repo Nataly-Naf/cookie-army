@@ -1,0 +1,117 @@
+<div class="buy-backdrop is-hidden" data-modal>
+  <div class="modal-buy">
+    <button class="modal-buy-close-btn" type="button" data-modal-close>
+      <svg class="modal-buy-close-icon" width="24" height="24">
+        <use href="./img/spryte.svg#icon-close-icon"></use>
+      </svg>
+    </button>
+    <h2 class="modal-buy-form-title">
+      Buy <span class="modal-buy-form-title-right">now</span>
+    </h2>
+    <ul class="modal-buy-product-list list">
+      <li class="modal-buy-product-item">
+        <picture
+          ><source
+            media="(min-width:768px)"
+            srcset="/img/modal-buy/choco-1_tab.png" />
+          <img src="/img/modal-buy/choco-1.png" alt="Chocolate"
+        /></picture>
+        <span class="modal-buy-weight-wrapper">100g</span>
+      </li>
+      <li class="modal-buy-product-item">
+        <picture
+          ><source
+            media="(min-width:768px)"
+            srcset="/img/modal-buy/choco-2_tab.png" />
+          <img src="/img/modal-buy/choco-2.png" alt="Chocolate"
+        /></picture>
+        <span class="modal-buy-weight-wrapper">200g</span>
+      </li>
+      <li class="modal-buy-product-item">
+        <picture
+          ><source
+            media="(min-width:768px)"
+            srcset="/img/modal-buy/choco-3_tab.png" />
+          <img src="/img/modal-buy/choco-3.png" alt="Chocolate"
+        /></picture>
+        <span class="modal-buy-weight-wrapper">300g</span>
+      </li>
+    </ul>
+    <p class="modal-buy-form-input-desc">Personal information</p>
+    <form class="modal-buy-form">
+      <span class="modal-buy-name-thumb">
+        <label for="" class="modal-buy-form-label modal-name-field">
+          <input
+            type="text"
+            name="user_name"
+            class="modal-buy-form-input"
+            placeholder="Name"
+            required
+            pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+        /></label>
+        <label for="" class="modal-buy-form-label modal-name-field">
+          <input
+            type="text"
+            name="user_surname"
+            class="modal-buy-form-input"
+            placeholder="Surname"
+            required
+            pattern="^[a-zA-Z]+\s[a-zA-Z]+$" /></label
+      ></span>
+      <label for="" class="modal-buy-form-label">
+        <span class="modal-buy-form-input-desc">Email</span>
+        <input
+          type="email"
+          name="user_mail"
+          class="modal-buy-form-input"
+          placeholder="Enter your email"
+          required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+        />
+      </label>
+      <label for="" class="modal-buy-form-label">
+        <span class="modal-buy-form-input-desc">Phone number</span>
+        <span class="modal-buy-input-wrapper buy-tel-thumb"
+          ><input
+            type="tel"
+            name="user_phone"
+            class="modal-buy-form-input buy-tel"
+            placeholder="Phone number"
+            required
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" /><svg
+            class="modal-buy-ukraine-icon"
+            width="22"
+            height="13"
+          >
+            <use href="/img/spryte.svg#ukraine-flag"></use></svg
+        ></span>
+      </label>
+      <label for="" class="modal-buy-form-label">
+        <span class="modal-buy-form-input-desc">Card number</span>
+        <span class="modal-buy-input-wrapper">
+          <input
+            type="text"
+            name="user_card"
+            class="modal-buy-form-input buy-card"
+            placeholder="Enter card"
+            required
+            pattern="[0-9]{13,16}" /><svg
+            class="modal-buy-mastercard-icon"
+            width="22"
+            height="13"
+          >
+            <use href="/img/spryte.svg#mastercard"></use></svg
+        ></span>
+      </label>
+      <label class="modal-buy-form-label">
+        <span class="modal-buy-form-input-desc">Comment</span>
+        <textarea
+          name="user_message"
+          class="modal-buy-form-message"
+          placeholder="Enter text"
+        ></textarea>
+      </label>
+      <button type="submit" class="modal-buy-form-btn">Submit</button>
+    </form>
+  </div>
+</div>
