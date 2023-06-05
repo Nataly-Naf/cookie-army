@@ -1,7 +1,16 @@
 /* SECTION COMPONENTS */
 .components-sec {
   padding-top: 72px;
-  padding-bottom: 72px;
+}
+@media screen and(min-width:768px) {
+  .components-sec {
+    padding-top: 100px;
+  }
+}
+@media screen and(min-width:1200px) {
+  .components-sec {
+    padding-top: 128px;
+  }
 }
 /* HEADER COMPONENTS */
 .header-components {
