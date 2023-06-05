@@ -1,0 +1,116 @@
+.subscribe-container {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(whisk-filled-with-melted-chocolate-close-up.jpg);
+    background-image: url(/images/Subcribesubscribe-mob.jpg);
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 62px 20px ;
+}
+
+@media only screen and (min-width: 376px) {
+  .subscribe-container {
+    background-image: url(/images/Subcribetablet.jpg);
+    max-width: 768px;
+    height: 370px;
+    padding: 72px 0;
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .subscribe-container {
+      background-image: url(/images/Subcribetablet@2x.jpg);
+    }
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .subscribe-container {
+    background-image: url(/images/Subcribedesc.jpg);
+    max-width: 1200px;
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .subscribe-container {
+      background-image: url(/images/Subcribedesc@2x.jpg);
+    }
+  }
+}
+
+.subscribe-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--main-light-font-color);
+  max-width: 291px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .subscribe-title {
+    font-size: 24px;
+    line-height: 1.17;
+    max-width: 378px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .subscribe-title {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+
+.subscribe-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: var(--main-light-font-color);
+  max-width: 326px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .subscribe-text {
+    max-width: 467px;
+  }
+}
+
+.subscribe-btn {
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: var(--main-light-font-color);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 28px;
+  gap: 14px;
+  width: 128px;
+  height: 41px;
+  background: var(--accent-color);
+  border-radius: 100px;
+  border: none;
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background-color: #FCF1E0;
+  color: var(--accent-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .subscribe-btn {
+    font-size: 18px;
+    line-height: 1.22;
+    padding: 14px 40px;
+    width: 172px;
+    height: 50px;
+  }
+}
