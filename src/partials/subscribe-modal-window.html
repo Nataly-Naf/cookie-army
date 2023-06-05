@@ -1,0 +1,34 @@
+<div class="explore-backdrop is-hidden" data-modal>
+    <div class="explore-modal">
+        <button class="explore-close-btn" type="button" data-modal-close>
+            <svg class="explore-close-icon" width="20" height="20">
+                <use href="./img/spryte.svg#icon-close-icon"></use>
+            </svg>
+        </button>
+        <div class="explore-img-wrapper">
+            <picture>
+                <source media="(min-width: 768px)"
+                    srcset="./img/subscribe-modal/mod-explore-img_tab_desk@1x.jpg 1x, ./img/subscribe-modal/mod-explore-img_tab_desk@2x 2x"
+                    type="image/jpg">
+                <source media="(max-width: 767px)"
+                    srcset="./img/subscribe-modal/mod-explore-img_mob@1x.jpg 1x, ./img/subscribe-modal/mod-explore-img_mob@2x.jpg 2x"
+                    type="image/jpg">
+                <img class="explore-img" src="./img/subscribe-modal/mod-explore-img_tab_desk@1x.jpg"
+                    alt="Dark chocolate" width="538px" height="196px" loading="lazy">
+            </picture>
+        </div>
+        <div class="explore-text-wrapper">
+            <h2 class="explore-title">Explore our
+                <span class="span-new-choc-first"><span class="span-new-choc">new chocolate</span> first!</span>
+            </h2>
+            <form class="explore-form">
+                <span class="explore-inp-btn-wrapper">
+                    <label class="explore-label">
+                        <input class="explore-input" type="email" name="subscribe_email" placeholder="Enter your email">
+                    </label>
+                    <button class="explore-submit-btn" type="submit">Submit</button>
+                </span>
+            </form>
+        </div>
+    </div>
+</div>
