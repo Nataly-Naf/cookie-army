@@ -75,7 +75,7 @@
 @media screen and (min-width: 1200px) {
   .ul-components {
     flex-direction: row;
-    order: ;
+    /* order: ; */
     flex-wrap: nowrap;
     gap: 19px;
   }
@@ -191,8 +191,8 @@
   letter-spacing: -0.02em;
 }
 @media screen and(min-width:1200px) {
-  .text-overlay {
-  }
+  /* .text-overlay {
+  } */
 }
 /* .overlay-comp {
   position: relative;
