@@ -1086,7 +1086,17 @@
     </button>
     <div class="explore-img-wrapper">
       <picture>
+
+        <!-- For desktop and tablet -->
+        <source media="(min-width: 768px)"
+          srcset="../img/subscribe-modal/mod-explore-img_tab_desk@1x.webp 1x, ../img/subscribe-modal/mod-explore-img_tab_desk@2x.webp 2x"
+          type="image/webp">
         <source media="(min-width: 768px)" srcset="/cookie-army/assets/mod-explore-img_tab_desk@1x-a716b0c9.jpg 1x, /cookie-army/assets/mod-explore-img_tab_desk@2x-6756f006.jpg 2x" type="image/jpg" />
+
+        <!-- For mobile -->
+        <source media="(max-width: 767px)"
+          srcset="../img/subscribe-modal/mod-explore-img_mob@1x.webp 1x, ../img/subscribe-modal/mod-explore-img_mob@2x.webp 2x"
+          type="image/webp">
         <source media="(max-width: 767px)" srcset="/cookie-army/assets/mod-explore-img_mob@1x-fdef2c11.jpg 1x, /cookie-army/assets/mod-explore-img_mob@2x-2e204282.jpg 2x" type="image/jpg" />
         <img class="explore-img" src="/cookie-army/assets/mod-explore-img_tab_desk@1x-a716b0c9.jpg" alt="Dark chocolate"
           width="538" height="196" loading="lazy" />
