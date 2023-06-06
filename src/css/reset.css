@@ -54,8 +54,8 @@ img {
   padding: 0 20px;
   margin: 0 auto;
   /* Щоб бачити рамки контейнера на етапі розробки */
-  outline: 2px solid red;
-  outline-offset: -2px;
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
 }
 /*--- Tablet screen ---*/
 @media only screen and (min-width: 768px) {
