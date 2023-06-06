@@ -367,11 +367,19 @@
     font-size: 14px;
     line-height: 1.21;
     color: var(--main-light-font-color);
+    transition: color var(--transition-main), background-color var(--transition-main);
 }
 
 @media only screen and (min-width: 768px) {
     .modal-buy-form-btn {
         width: 133px;
         height: 45px;
+        padding: 14px 40px;
     }
+}
+
+.modal-buy-form-btn:hover,
+.modal-buy-form-btn:focus {
+    color: var(--accent-color);
+    background-color: #FCF1E0;
 }
