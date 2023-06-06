@@ -1,46 +1,56 @@
-.subscribe-container {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+.subscribe-section {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(whisk-filled-with-melted-chocolate-close-up.jpg);
-    background-image: url(/img/subscribe/subscribe-mob.jpg);
-    background-repeat: no-repeat;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 62px 20px ;
+  background-image: url(/img/subscribe/subscribe-mob.jpg);
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .subscribe-container {
-     background-image: url(/img/subscribe/subscribe-mob@2x.jpg);
-    }
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .subscribe-section {
+    background-image: url(/img/subscribe/subscribe-mob@2x.jpg);
   }
+}
 
 @media only screen and (min-width: 376px) {
-  .subscribe-container {
+  .subscribe-section {
     background-image: url(/img/subscribe/subscribe-tablet.jpg);
     max-width: 768px;
     height: 370px;
     padding: 72px 0;
   }
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .subscribe-container {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .subscribe-section {
       background-image: url(/img/subscribe/subscribe-tablet@2x.jpg);
     }
   }
 }
 
 @media only screen and (min-width: 769px) {
-  .subscribe-container {
+  .subscribe-section {
     background-image: url(/img/subscribe/subscribe-desc.jpg);
     max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
   }
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .subscribe-container {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .subscribe-section {
       background-image: url(/img/subscribe/subscribe-desc@2x.jpg);
     }
   }
 }
-
+.subscribe-section {
+  padding-top: 62px;
+  padding-bottom: 62px;
+}
 .subscribe-title {
   font-weight: 600;
   font-size: 20px;
@@ -55,6 +65,10 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .subscribe-section {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
   .subscribe-title {
     font-size: 24px;
     line-height: 1.17;
@@ -107,7 +121,7 @@
 
 .subscribe-btn:hover,
 .subscribe-btn:focus {
-  background-color: #FCF1E0;
+  background-color: #fcf1e0;
   color: var(--accent-color);
 }
 
