@@ -18,6 +18,11 @@
 }
 
 /* Desription */
+.made-video-wrapper {
+  width: 335px;
+  height: 500px;
+  overflow: hidden;
+}
 
 .description-title {
   font-weight: 600;
@@ -138,10 +143,19 @@
 
   .made-container {
     flex-direction: column;
+    align-items: center;
     display: flex;
     padding-left: 77px;
     padding-right: 77px;
     gap: 20px;
+  }
+  .made-video-wrapper {
+    width: 613px;
+    height: 400px;
+    overflow: hidden;
+  }
+  .made-chocolate-video {
+    height: 100%;
   }
 
   .made-section {
@@ -181,7 +195,14 @@
     width: 516px;
     padding: 32px;
   }
-
+  .made-video-wrapper {
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+  }
+  .made-chocolate-video {
+    height: 100%;
+  }
   .description-list-item:not(:last-child) {
     margin-bottom: 24px;
   }
