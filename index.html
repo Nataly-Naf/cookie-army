@@ -908,22 +908,31 @@
     </h2>
     <ul class="modal-buy-product-list list">
       <li class="modal-buy-product-item">
-        <picture></picture>
-        <source media="(min-width:768px)" srcset="/cookie-army/assets/choco-1_tab-210d2ebd.png " />
-        <img src="/cookie-army/assets/choco-1-97ee8ddc.png" alt="Chocolate" />
+        <picture>
+          <source
+            media="(min-width:768px)"
+            srcset="/cookie-army/assets/choco-1_tab-210d2ebd.png "
+          />
+          <img src="/cookie-army/assets/choco-1-97ee8ddc.png" alt="Chocolate" />
         </picture>
         <span class="modal-buy-weight-wrapper">100g</span>
       </li>
       <li class="modal-buy-product-item">
         <picture>
-          <source media="(min-width:768px)" srcset="/cookie-army/assets/choco-2_tab-ff658910.png " />
+          <source
+            media="(min-width:768px)"
+            srcset="/cookie-army/assets/choco-2_tab-ff658910.png "
+          />
           <img src="/cookie-army/assets/choco-2-51259cca.png" alt="Chocolate" />
         </picture>
         <span class="modal-buy-weight-wrapper">200g</span>
       </li>
       <li class="modal-buy-product-item">
         <picture>
-          <source media="(min-width:768px)" srcset="/cookie-army/assets/choco-3_tab-571e27f5.png " />
+          <source
+            media="(min-width:768px)"
+            srcset="/cookie-army/assets/choco-3_tab-571e27f5.png "
+          />
           <img src="/cookie-army/assets/choco-3-ada4eb22.png" alt="Chocolate" />
         </picture>
         <span class="modal-buy-weight-wrapper">300g</span>
@@ -933,40 +942,81 @@
     <form class="modal-buy-form">
       <span class="modal-buy-name-thumb">
         <label class="modal-buy-form-label modal-name-field">
-          <input type="text" name="user_name" class="modal-buy-form-input" placeholder="Name" required
-            pattern="^[a-zA-Z]+\s[a-zA-Z]+$" /></label>
+          <input
+            type="text"
+            name="user_name"
+            class="modal-buy-form-input"
+            placeholder="Name"
+            required
+            pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+        /></label>
         <label class="modal-buy-form-label modal-name-field">
-          <input type="text" name="user_surname" class="modal-buy-form-input" placeholder="Surname" required
-            pattern="^[a-zA-Z]+\s[a-zA-Z]+$" /></label></span>
+          <input
+            type="text"
+            name="user_surname"
+            class="modal-buy-form-input"
+            placeholder="Surname"
+            required
+            pattern="^[a-zA-Z]+\s[a-zA-Z]+$" /></label
+      ></span>
       <label class="modal-buy-form-label">
         <span class="modal-buy-form-input-desc">Email</span>
-        <input type="email" name="user_mail" class="modal-buy-form-input" placeholder="Enter your email" required
-          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+        <input
+          type="email"
+          name="user_mail"
+          class="modal-buy-form-input"
+          placeholder="Enter your email"
+          required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+        />
       </label>
       <label class="modal-buy-form-label">
         <span class="modal-buy-form-input-desc">Phone number</span>
-        <span class="modal-buy-input-wrapper buy-tel-thumb"><input type="tel" name="user_phone"
-            class="modal-buy-form-input buy-tel" placeholder="Phone number" required
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" /><svg class="modal-buy-ukraine-icon" width="22" height="13">
-            <use href="/cookie-army/assets/spryte-aab6fcc2.svg#ukraine-flag"></use>
-          </svg></span>
+        <span class="modal-buy-input-wrapper buy-tel-thumb"
+          ><input
+            type="tel"
+            name="user_phone"
+            class="modal-buy-form-input buy-tel"
+            placeholder="Phone number"
+            required
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" /><svg
+            class="modal-buy-ukraine-icon"
+            width="22"
+            height="13"
+          >
+            <use href="/cookie-army/assets/spryte-aab6fcc2.svg#ukraine-flag"></use></svg
+        ></span>
       </label>
       <label class="modal-buy-form-label">
         <span class="modal-buy-form-input-desc">Card number</span>
         <span class="modal-buy-input-wrapper">
-          <input type="text" name="user_card" class="modal-buy-form-input buy-card" placeholder="Enter card" required
-            pattern="[0-9]{13,16}" /><svg class="modal-buy-mastercard-icon" width="22" height="13">
-            <use href="/cookie-army/assets/spryte-aab6fcc2.svg#mastercard"></use>
-          </svg></span>
+          <input
+            type="text"
+            name="user_card"
+            class="modal-buy-form-input buy-card"
+            placeholder="Enter card"
+            required
+            pattern="[0-9]{13,16}" /><svg
+            class="modal-buy-mastercard-icon"
+            width="22"
+            height="13"
+          >
+            <use href="/cookie-army/assets/spryte-aab6fcc2.svg#mastercard"></use></svg
+        ></span>
       </label>
       <label class="modal-buy-form-label">
         <span class="modal-buy-form-input-desc">Comment</span>
-        <textarea name="user_message" class="modal-buy-form-message" placeholder="Enter text"></textarea>
+        <textarea
+          name="user_message"
+          class="modal-buy-form-message"
+          placeholder="Enter text"
+        ></textarea>
       </label>
       <button type="submit" class="modal-buy-form-btn">Submit</button>
     </form>
   </div>
 </div>
+
     <div class="review-modal-backdrop review-modal-is-hidden" data-modalreview>
   <div class="review-modal">
     <button type="button" class="review-modal-close-btn" data-modalreview-close>
