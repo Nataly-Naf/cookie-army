@@ -373,5 +373,12 @@
     .modal-buy-form-btn {
         width: 133px;
         height: 45px;
+        padding: 14px 40px;
     }
+}
+
+.modal-buy-form-btn:hover,
+.modal-buy-form-btn:focus {
+    color: var(--accent-color);
+    background-color: #FCF1E0;
 }
