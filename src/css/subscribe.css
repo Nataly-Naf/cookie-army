@@ -36,6 +36,8 @@
   .subscribe-section {
     background-image: url(/img/subscribe/subscribe-desc.jpg);
     max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
