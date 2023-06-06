@@ -367,6 +367,7 @@
     font-size: 14px;
     line-height: 1.21;
     color: var(--main-light-font-color);
+    transition: color var(--transition-main), background-color var(--transition-main);
 }
 
 @media only screen and (min-width: 768px) {
