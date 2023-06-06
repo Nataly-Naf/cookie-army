@@ -7,9 +7,19 @@
     </button>
     <div class="explore-img-wrapper">
       <picture>
+
+        <!-- For desktop and tablet -->
+        <source media="(min-width: 768px)"
+          srcset="../img/subscribe-modal/mod-explore-img_tab_desk@1x.webp 1x, ../img/subscribe-modal/mod-explore-img_tab_desk@2x.webp 2x"
+          type="image/webp">
         <source media="(min-width: 768px)" srcset="
             ./img/subscribe-modal/mod-explore-img_tab_desk@1x.jpg 1x,
             ./img/subscribe-modal/mod-explore-img_tab_desk@2x.jpg 2x" type="image/jpg" />
+
+        <!-- For mobile -->
+        <source media="(max-width: 767px)"
+          srcset="../img/subscribe-modal/mod-explore-img_mob@1x.webp 1x, ../img/subscribe-modal/mod-explore-img_mob@2x.webp 2x"
+          type="image/webp">
         <source media="(max-width: 767px)" srcset="
             ./img/subscribe-modal/mod-explore-img_mob@1x.jpg 1x,
             ./img/subscribe-modal/mod-explore-img_mob@2x.jpg 2x" type="image/jpg" />
